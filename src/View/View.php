@@ -8,6 +8,7 @@ class View
     {
         $engine = ucfirst(strtolower($name));
         $engine = "\\Orh\Yaf\View\\Engines\\{$engine}";
+
         return new $engine();
     }
 
